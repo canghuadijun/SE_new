@@ -115,7 +115,7 @@
             </div>
         </div>
         <div class="payment-content-right-payment">
-            <button>TIẾP TỤC THANH TOÁN</button>
+            <button onclick="location.href='delivery.php'">TIẾP TỤC THANH TOÁN</button>
         </div>
     </section>
 

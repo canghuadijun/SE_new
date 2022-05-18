@@ -81,11 +81,17 @@
                     </div>
                     <div class="quantity">
                         <p style="font-weight: bold;">Số lượng:</p>
-                        <input type="number" min="0" value="1"> 
+                        <!-- <input type="number" min="0" value="1">  -->
                         
                     </div>
                     <div class="product-content-right-product-button">
-                        <button><i class="fa-solid fa-cart-shopping"></i> <p>MUA HÀNG</p></button>
+                        <form action="cart.php" method="post">
+                            <input type="number" name="soluong" min="1" max="10" value="1">
+                            <input type="submit" name="addcart" value="Đặt hàng">
+                            <input type="hidden" name="tensp" value="<?php echo $s['productName']?>">
+                            <input type="hidden" name="gia" value="<?php echo $s['buyPrice']?>">
+                            <input type="hidden" name="hinh" value="<?php echo $s['image']?>">
+                        </form>
                         <button><p>TÌM TẠI CỬA HÀNG</p></button>
                     </div>
                     <div class="product-content-right-product-icon">
