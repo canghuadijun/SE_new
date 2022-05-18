@@ -44,7 +44,7 @@
         <div class="user">
             <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a>Đăng nhập</a></li>
-            <li><button><i class="fa-solid fa-cart-shopping cart-icon"></button></i></li>
+            <li><button onclick="location.href='cart.php'"><i class="fa-solid fa-cart-shopping cart-icon"></button></i></li>
         </div>
     </header>
     <!--product-->
