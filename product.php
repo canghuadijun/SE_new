@@ -79,13 +79,14 @@
                             <img src="Material/sp1.1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="quantity">
+                    <form method='get'>
                         <p style="font-weight: bold;">Số lượng:</p>
-                        <input type="number" min="0" value="1"> 
-                        
-                    </div>
+                        <input type="number" min="0" value="1" name="quantity"> 
+                    </form>
                     <div class="product-content-right-product-button">
-                        <button><i class="fa-solid fa-cart-shopping"></i> <p>MUA HÀNG</p></button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> 
+                        <p>MUA HÀNG</p> 
+                        </button>
                         <button><p>TÌM TẠI CỬA HÀNG</p></button>
                     </div>
                     <div class="product-content-right-product-icon">

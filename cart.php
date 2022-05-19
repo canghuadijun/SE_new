@@ -66,8 +66,8 @@
                         <tr>
                             <th>Sản phẩm</th>
                             <th>Tên sản phẩm</th>
-                            <th>Năm phát hành</th>
-                            <th>Tác giả</th>
+                            <!-- <th>Năm phát hành</th>
+                            <th>Tác giả</th> -->
                             <th>SL</th>
                             <th>Thành Tiền</th>
                             <th>Xóa</th>
