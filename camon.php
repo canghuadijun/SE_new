@@ -1,1 +1,0 @@
-<p>Cảm ơn bạn đã đặt hàng. Chúng tôi sẽ chuẩn bị đơn hàng nhanh nhất có thế</p>

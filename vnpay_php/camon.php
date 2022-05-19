@@ -1,1 +1,0 @@
-<p>Cảm ơn bạn đã mua hàng ở Website, Sản phẩm sẽ đến tay bạn nhanh nhất có thể.</p>

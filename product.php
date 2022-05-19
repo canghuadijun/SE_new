@@ -26,7 +26,7 @@
             <li><a>Trending</a></li>
             <li><a>Reviews</a></li>
             <li><a>Tác giả</a></li>
-            <li><a href="cartegory.php">Thể loại</a>
+            <li><a>Thể loại</a>
                 <ul class="sub-menu">
                     <li><a>Chính trị - Pháp luật</a></li>
                     <li><a>Khoa học công nghệ - Kinh tế</a></li>
