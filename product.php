@@ -144,29 +144,24 @@
         </div>
         <div class="row product-content">
             <div class="product-related-Item">
-                <img src="Material/sp1.jpg" alt="">
-                <h1>SÁCH CHÍNH TRỊ CỰC CĂNG</h1>
-                <p>800.000<sup>đ</sup></p>
+                <img src="productimg/qua1.jpg" alt="">
+                <h1>Móng vuốt quạ đen (I)</h1>
+                <p>100.000<sup>đ</sup></p>
             </div>
             <div class="product-related-Item">
-                <img src="Material/sp1.jpg" alt="">
-                <h1>SÁCH CHÍNH TRỊ CỰC CĂNG</h1>
-                <p>800.000<sup>đ</sup></p>
+                <img src="productimg/qua2.jpg" alt="">
+                <h1>Móng vuốt quạ đen (II)</h1>
+                <p>100.000<sup>đ</sup></p>
             </div>
             <div class="product-related-Item">
-                <img src="Material/sp1.jpg" alt="">
-                <h1>SÁCH CHÍNH TRỊ CỰC CĂNG</h1>
-                <p>800.000<sup>đ</sup></p>
+                <img src="productimg/qua3.jpg" alt="">
+                <h1>Móng vuốt quạ đen (III)</h1>
+                <p>100.000<sup>đ</sup></p>
             </div>
             <div class="product-related-Item">
-                <img src="Material/sp1.jpg" alt="">
-                <h1>SÁCH CHÍNH TRỊ CỰC CĂNG</h1>
-                <p>800.000<sup>đ</sup></p>
-            </div>
-            <div class="product-related-Item">
-                <img src="Material/sp1.jpg" alt="">
-                <h1>SÁCH CHÍNH TRỊ CỰC CĂNG</h1>
-                <p>800.000<sup>đ</sup></p>
+                <img src="productimg/qua4.jpg" alt="">
+                <h1>Móng vuốt quạ đen (IV)</h1>
+                <p>100.000<sup>đ</sup></p>
             </div>
         </div>
     </section>
