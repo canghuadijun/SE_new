@@ -126,8 +126,8 @@
                 </div>
             </div>
         </div>
-        <div>
-            <input type="submit" value="Thanh toán ngay" name="redirect" id="redirect" class="payment-content-right-payment">
+        <div class="payment-content-right-payment">
+            <input type="submit" value="Thanh toán ngay" name="redirect" id="redirect">
         </div>
     </form>
     </section>
