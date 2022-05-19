@@ -38,7 +38,7 @@
         <div class="user">
             <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a>Đăng nhập</a></li>
-            <li><button><i class="fa-solid fa-cart-shopping cart-icon"></button></i></li>
+            <li><button onclick="location.href='cart.php'"><i class="fa-solid fa-cart-shopping cart-icon"></button></i></li>
         </div>
     </header>
 
@@ -115,7 +115,7 @@
             </div>
         </div>
         <div class="payment-content-right-payment">
-            <button>TIẾP TỤC THANH TOÁN</button>
+            <button onclick="location.href='delivery.php'">TIẾP TỤC THANH TOÁN</button>
         </div>
     </section>
 

@@ -44,7 +44,7 @@
         <div class="user">
             <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a>Đăng nhập</a></li>
-            <li><button><i class="fa-solid fa-cart-shopping cart-icon"></button></i></li>
+            <li><button onclick="location.href='cart.php'"><i class="fa-solid fa-cart-shopping cart-icon"></button></i></li>
         </div>
     </header>
     <!--product-->
@@ -79,14 +79,19 @@
                             <img src="Material/sp1.1.jpg" alt="">
                         </div>
                     </div>
-                    <form method='get'>
+                    <div class="quantity">
                         <p style="font-weight: bold;">Số lượng:</p>
-                        <input type="number" min="0" value="1" name="quantity"> 
-                    </form>
+                        <!-- <input type="number" min="0" value="1">  -->
+                        
+                    </div>
                     <div class="product-content-right-product-button">
-                        <button><i class="fa-solid fa-cart-shopping"></i> 
-                        <p>MUA HÀNG</p> 
-                        </button>
+                        <form action="cart.php" method="post">
+                            <input type="number" name="soluong" min="1" max="10" value="1">
+                            <input type="submit" name="addcart" value="Đặt hàng">
+                            <input type="hidden" name="tensp" value="<?php echo $s['productName']?>">
+                            <input type="hidden" name="gia" value="<?php echo $s['buyPrice']?>">
+                            <input type="hidden" name="hinh" value="<?php echo $s['image']?>">
+                        </form>
                         <button><p>TÌM TẠI CỬA HÀNG</p></button>
                     </div>
                     <div class="product-content-right-product-icon">

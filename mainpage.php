@@ -19,7 +19,7 @@
             <li><a>Trending</a></li>
             <li><a>Reviews</a></li>
             <li><a>Tác giả</a></li>
-            <li><a>Thể loại</a>
+            <li><a href="cartegory.php">Thể loại</a>
                 <ul class="sub-menu">
                     <li><a>Chính trị - Pháp luật</a></li>
                     <li><a>Khoa học công nghệ - Kinh tế</a></li>
@@ -37,7 +37,7 @@
         <div class="user">
             <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a>Đăng nhập</a></li>
-            <li><button><i class="fa-solid fa-cart-shopping cart-icon"></button></i></li>
+            <li><button onclick="location.href='cart.php'"><i class="fa-solid fa-cart-shopping cart-icon"></button></i></li>
         </div>
     </header>
 
