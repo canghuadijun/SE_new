@@ -71,7 +71,6 @@
                 </div>
             </div>
         </div>
-        <form>
         <div class="container">
             <div class="delivery-content row">
                 <div class="delivery-content-left">
