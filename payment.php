@@ -20,7 +20,7 @@
             <li><a>Trending</a></li>
             <li><a>Reviews</a></li>
             <li><a>Tác giả</a></li>
-            <li><a>Thể loại</a>
+            <li><a href="cartegory.php">Thể loại</a>
                 <ul class="sub-menu">
                     <li><a>Chính trị - Pháp luật</a></li>
                     <li><a>Khoa học công nghệ - Kinh tế</a></li>
@@ -44,6 +44,7 @@
 
     <!------------------Payment---------------------->
     <section>
+        <form action="xulythanhtoan.php" method="POST">
         <div class="container">
             <div class="payment-top-wrap">
                 <div class="payment-top">
@@ -72,25 +73,36 @@
                     <div class="payment-content-left-method-payment">
                         <p style="font-weight: bold;">Phương thức thanh toán</p>
                         <p style="font-style: italic" class="description">Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ được lưu lại.</p>
-                        <div class="payment-content-left-method-payment-item">
-                            <input name="method-payment" type="radio">
-                            <label>Thanh toán bằng thẻ tín dụng (OnePay)</label>
-                        </div>
-                        <div class="payment-content-left-method-payment-item-img">
-                            <img src="Material/visa.png">
-                        </div>
-                        <div class="payment-content-left-method-payment-item">
-                            <input name="method-payment" type="radio">
-                            <label>Thanh toán bằng thẻ ATM (OnePay)</label>
-                        </div>
-                        <div class="payment-content-left-method-payment-item">
-                            <input type="radio">
-                            <label>Thanh toán Momo</label>
-                        </div>
-                        <div class="payment-content-left-method-payment-item">
-                            <input name="method-payment" type="radio">
-                            <label>Thanh toán tiền mặt</label>
-                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="flexRadioDefault0" value="tienmat">
+                        <label class="form-check-label" for="flexRadioDefault0">
+                        Thanh toán khi nhận hàng
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="flexRadioDefault1" value="thequocte">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Thẻ tín dụng quốc tế (Visa, MasterCard)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="flexRadioDefault2" value="thenoidia">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        Thẻ tín dụng nội địa (Napas)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="flexRadioDefault3" value = "momo">
+                        <label class="form-check-label" for="flexRadioDefault3">
+                        MOMO
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="flexRadioDefault4" value="vnpay">
+                        <label class="form-check-label" for="flexRadioDefault4">
+                        VNPAY
+                        </label>
+                    </div>
                     </div>
                 </div>
                 <div class="payment-content-right">
@@ -114,9 +126,10 @@
                 </div>
             </div>
         </div>
-        <div class="payment-content-right-payment">
-            <button onclick="location.href='delivery.php'">TIẾP TỤC THANH TOÁN</button>
+        <div>
+            <input type="submit" value="Thanh toán ngay" name="redirect" id="redirect" class="payment-content-right-payment">
         </div>
+    </form>
     </section>
 
     <!-- footer-->
