@@ -105,7 +105,7 @@
             <li><a>Trending</a></li>
             <li><a>Reviews</a></li>
             <li><a>Tác giả</a></li>
-            <li><a>Thể loại</a>
+            <li><a href="cartegory.php">Thể loại</a>
                 <ul class="sub-menu">
                     <li><a>Chính trị - Pháp luật</a></li>
                     <li><a>Khoa học công nghệ - Kinh tế</a></li>
@@ -185,7 +185,7 @@
                     </div>
                     <div class="delivery-content-left-button row">
                         <a href="cart.php"><span>&#171;</span><p> Quay lại giỏ hàng</p></a>
-                        <button onclick="location.href=''><p style="font-weight: bold;" type="submit"> THANH TOÁN VÀ GIAO HÀNG </p></button>
+                        <button onclick="location.href=''"><p style="font-weight: bold;" type="submit"> THANH TOÁN VÀ GIAO HÀNG </p></button>
                     </div>
                 </div>
                 <div class="delivery-content-right">
