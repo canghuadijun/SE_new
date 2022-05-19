@@ -1,15 +1,17 @@
 <?php      
      session_start();
+     require_once('config_vnpay.php');
      $cart_payment = $_POST['payment'];
+     $code_order = rand(0,9999);
      if($cart_payment == 'vnpay'){
-        $vnp_TxnRef = $_POST['order_id']; //Mã đơn hàng. Trong thực tế Merchant cần insert đơn hàng vào DB và gửi mã này sang VNPAY
+        $vnp_TxnRef = $code_order; //Mã đơn hàng. Trong thực tế Merchant cần insert đơn hàng vào DB và gửi mã này sang VNPAY
         $vnp_OrderInfo = 'Thanh toán đơn hàng tại Web';
-        $vnp_OrderType = 'Billpayment';
+        $vnp_OrderType = 'billpayment';
         $vnp_Amount = 10000 * 100;
-        $vnp_Locale = 'Vietnamese';
+        $vnp_Locale = 'VN';
         $vnp_BankCode = 'NCB';
         $vnp_IpAddr = $_SERVER['REMOTE_ADDR'];
-        $vnp_ExpireDate = $_POST['txtexpire'];
+        $vnp_ExpireDate = $expire;
         $inputData = array(
             "vnp_Version" => "2.1.0",
             "vnp_TmnCode" => $vnp_TmnCode,
@@ -23,7 +25,7 @@
             "vnp_OrderType" => $vnp_OrderType,
             "vnp_ReturnUrl" => $vnp_Returnurl,
             "vnp_TxnRef" => $vnp_TxnRef,
-            "vnp_ExpireDate"=>$vnp_ExpireDate,
+            "vnp_ExpireDate"=>$vnp_ExpireDate
         );
 
         if (isset($vnp_BankCode) && $vnp_BankCode != "") {

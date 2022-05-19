@@ -20,7 +20,7 @@
             <li><a>Trending</a></li>
             <li><a>Reviews</a></li>
             <li><a>Tác giả</a></li>
-            <li><a href="cartegory.php">Thể loại</a>
+            <li><a>Thể loại</a>
                 <ul class="sub-menu">
                     <li><a>Chính trị - Pháp luật</a></li>
                     <li><a>Khoa học công nghệ - Kinh tế</a></li>
@@ -48,7 +48,7 @@
         <div class="container">
             <div class="payment-top-wrap">
                 <div class="payment-top">
-                    <div class="payment-top-delivery payment-top-item">
+                    <div class="payment-top-payment payment-top-item">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                     <div class="payment-top-map payment-top-item">
