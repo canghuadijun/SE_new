@@ -2,12 +2,7 @@
     session_start();
     //session_destroy();
     if(!isset($_SESSION['giohang'])) $_SESSION['giohang']=[];
-    //làm rỗng giỏ hàng
-    if(isset($_GET['delcart'])&&($_GET['delcart']==1)) unset($_SESSION['giohang']);
-    //xóa sp trong giỏ hàng
-    if(isset($_GET['delid'])&&($_GET['delid']>=0)){
-       array_splice($_SESSION['giohang'],$_GET['delid'],1);
-    }
+    
     //lấy dữ liệu từ form
     if(isset($_POST['addcart'])&&($_POST['addcart'])){
         $hinh=$_POST['hinh'];
@@ -48,20 +43,18 @@
                     $tt=$_SESSION['giohang'][$i][2] * $_SESSION['giohang'][$i][3];
                     $tong+=$tt;
                     echo '<tr>
-                            <td><img src='.$_SESSION['giohang'][$i][0].' alt=""></td>
+                            
                             <td>'.$_SESSION['giohang'][$i][1].'</td>
                             <td>'.$_SESSION['giohang'][$i][2].'</td>
                             <td> '.$_SESSION['giohang'][$i][3].'</td>
                             <td>
                                 <div>'.$tt.'</div>
                             </td>
-                            <td>
-                                <a href="cart.php?delid='.$i.'">Xóa</a>
-                            </td>
+                    
                         </tr>';
                 }
                 echo '<tr>
-                        <th colspan="5">Tổng đơn hàng</th>
+                        <th colspan="3">Tổng đơn hàng</th>
                         <th>
                             <div>'.$tong.'<p>vnđ</p></div>
                         </th>
@@ -197,12 +190,10 @@
                 <div class="delivery-content-right">
                 <table>
                         <tr>
-                            <th>Sản phẩm</th>
                             <th>Tên sản phẩm                  </th>
                             <th>Giá tiền</th>
                             <th>SL</th>
                             <th>Thành Tiền</th>
-                            <th>Xóa</th>
                         </tr>
                         <?php showgiohang() ?>
                         <!-- <tr>

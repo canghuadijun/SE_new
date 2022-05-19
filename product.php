@@ -92,6 +92,13 @@
                             <input type="hidden" name="gia" value="<?php echo $s['buyPrice']?>">
                             <input type="hidden" name="hinh" value="<?php echo $s['image']?>">
                         </form>
+                        <form action="delivery.php" method="post">
+                            <input type="hidden" name="soluong" min="1" max="10" value="1">
+                            <!-- <input type="submit" name="addcart" value="Đặt hàng"> -->
+                            <input type="hidden" name="tensp" value="<?php echo $s['productName']?>">
+                            <input type="hidden" name="gia" value="<?php echo $s['buyPrice']?>">
+                            <!-- <input type="hidden" name="hinh" value="<?php echo $s['image']?>"> -->
+                        </form>
                         <button><p>TÌM TẠI CỬA HÀNG</p></button>
                     </div>
                     <div class="product-content-right-product-icon">
