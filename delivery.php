@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/42117e27a2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      <!--
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+               alert("Name must be filled out");
+        return false;
+        }
+    }
+      //-->
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <title>CART</title>
 </head>
@@ -20,7 +32,7 @@
             <li><a>Trending</a></li>
             <li><a>Reviews</a></li>
             <li><a>Tác giả</a></li>
-            <li><a>Thể loại</a>
+            <li><a href="cartegory.php">Thể loại</a>
                 <ul class="sub-menu">
                     <li><a>Chính trị - Pháp luật</a></li>
                     <li><a>Khoa học công nghệ - Kinh tế</a></li>
@@ -59,6 +71,7 @@
                 </div>
             </div>
         </div>
+        <form>
         <div class="container">
             <div class="delivery-content row">
                 <div class="delivery-content-left">
@@ -78,28 +91,30 @@
                     <div class="delivery-content-left-input-top row">
                         <div class="delivery-content-left-input-top-Item">
                             <label for="">Họ tên <span style="color:red;">*</span></label>
-                            <input type="text">
+                            <form action="delivery.php">
+                            <input type="text" pattern="[a-z]{1,15}">
+                            </form>
                         </div>
                         <div class="delivery-content-left-input-top-Item">
                             <label for="">Điện thoại <span style="color:red;">*</span></label>
-                            <input type="text">
+                            <input type="text" pattern="[a-z]{1,15}">
                         </div>
                         <div class="delivery-content-left-input-top-Item">
                             <label for="">Tỉnh/Tp <span style="color:red;">*</span></label>
-                            <input type="text">
+                            <input type="text" pattern="[a-z]{1,15}">
                         </div>
                         <div class="delivery-content-left-input-top-Item">
                             <label for="">Quận/Huyện <span style="color:red;">*</span></label>
-                            <input type="text">
+                            <input type="text" pattern="[a-z]{1,15}">
                         </div>
                     </div>
                     <div class="delivery-content-left-input-bottom">
                         <label for="">Địa chỉ <span style="color:red;">*</span></label>
-                        <input type="text">
+                        <input type="text" pattern="[a-z]{1,15}">
                     </div>
                     <div class="delivery-content-left-button row">
-                        <a href=""><span>&#171;</span><p> Quay lại giỏ hàng</p></a>
-                        <button><p style="font-weight: bold;"> THANH TOÁN VÀ GIAO HÀNG </p></button>
+                        <a href="cart.php"><span>&#171;</span><p> Quay lại giỏ hàng</p></a>
+                        <button onclick="location.href='payment.php'"><p style="font-weight: bold;"> THANH TOÁN VÀ GIAO HÀNG </p></button>
                     </div>
                 </div>
                 <div class="delivery-content-right">

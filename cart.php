@@ -196,7 +196,7 @@
                     </div>
                     <div class="cart-content-right-button">
                         <button onclick="location.href='cartegory.php'">TIẾP TỤC MUA SẮM</button>
-                        <button onclick="location.href='payment.php'">THANH TOÁN</button>
+                        <button onclick="location.href='delivery.php'">THANH TOÁN</button>
                     </div>
                 </div>
             </div>
