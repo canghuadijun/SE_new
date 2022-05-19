@@ -4,7 +4,7 @@ $username = "root";
 $password = '';
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, "onlineshopping");
+$conn = new mysqli($servername, $username, $password, "onlineshopping",3307);
 
 // Check connection
 if ($conn->connect_error) {
