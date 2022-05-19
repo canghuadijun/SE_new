@@ -77,16 +77,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/42117e27a2.js" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      <!--
+    <script>
         function validateForm() {
             let x = document.forms["myForm"]["fname"].value;
-            if (x == "") {
-               alert("Name must be filled out");
-        return false;
+            let y = document.forms["myForm"]["address"].value;
+            let z = document.forms["myForm"]["city"].value;
+            let t = document.forms["myForm"]["phone"].value;
+            let m = document.forms["myForm"]["district"].value;
+            if (x == "" || y == "" || z == "" || t == "" || m == "") {
+            alert("Thiếu thông tin");
+            return false;
+            }
         }
-    }
-      //-->
     </script>
     <link rel="stylesheet" href="css/style.css">
     <title>CART</title>
@@ -127,6 +129,7 @@
 
     <!----------------Delivery--------------->
     <section class="delivery">
+    <form name="myForm" action="payment.php" onsubmit="return validateForm()" method="POST">
         <div class="container">
             <div class="delivery-top-wrap">
                 <div class="delivery-top">
@@ -161,30 +164,28 @@
                     <div class="delivery-content-left-input-top row">
                         <div class="delivery-content-left-input-top-Item">
                             <label for="">Họ tên <span style="color:red;">*</span></label>
-                            <form action="delivery.php">
-                            <input type="text" pattern="[a-z]{1,15}">
-                            </form>
+                            <input type="text" placeholder="Name" name= "fname">
                         </div>
                         <div class="delivery-content-left-input-top-Item">
                             <label for="">Điện thoại <span style="color:red;">*</span></label>
-                            <input type="text" pattern="[a-z]{1,15}">
+                            <input type="text" placeholder="Phone Number" name="phone">
                         </div>
                         <div class="delivery-content-left-input-top-Item">
                             <label for="">Tỉnh/Tp <span style="color:red;">*</span></label>
-                            <input type="text" pattern="[a-z]{1,15}">
+                            <input type="text" placeholder="City" name= "city">
                         </div>
                         <div class="delivery-content-left-input-top-Item">
                             <label for="">Quận/Huyện <span style="color:red;">*</span></label>
-                            <input type="text" pattern="[a-z]{1,15}">
+                            <input type="text" placeholder="District" name= "district">
                         </div>
                     </div>
                     <div class="delivery-content-left-input-bottom">
                         <label for="">Địa chỉ <span style="color:red;">*</span></label>
-                        <input type="text" pattern="[a-z]{1,15}">
+                        <input type="text" placeholder="Address" name="address">
                     </div>
                     <div class="delivery-content-left-button row">
                         <a href="cart.php"><span>&#171;</span><p> Quay lại giỏ hàng</p></a>
-                        <button onclick="location.href='payment.php'"><p style="font-weight: bold;"> THANH TOÁN VÀ GIAO HÀNG </p></button>
+                        <button onclick="location.href=''><p style="font-weight: bold;" type="submit"> THANH TOÁN VÀ GIAO HÀNG </p></button>
                     </div>
                 </div>
                 <div class="delivery-content-right">
@@ -218,6 +219,7 @@
                 </div>
             </div>
         </div>
+    </form>
     </section>
 
     <!-- footer-->
