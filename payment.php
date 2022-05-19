@@ -47,7 +47,7 @@
         <div class="container">
             <div class="payment-top-wrap">
                 <div class="payment-top">
-                    <div class="payment-top-payment payment-top-item">
+                    <div class="payment-top-delivery payment-top-item">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                     <div class="payment-top-map payment-top-item">
